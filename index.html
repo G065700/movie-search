@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMDb API based MOVIE SEARCH</title>
+
+  <!-- reset.min.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+ 
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="./main.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <section class="main">
+
+    <div class="inner">
+      <input type="text" placeholder="영화 제목으로 검색해 보세요. (ex. frozen)" class="search" />
+      <span class="material-icons searchIcon">search</span>
+      <a href="javascript:void(0)" class="description">검색할 영화가 없는 경우 여기를 클릭해 보세요!</a>
+    </div>
+
+  </section>
+</body>
+
+</html>

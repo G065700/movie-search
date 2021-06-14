@@ -1,0 +1,58 @@
+/* COMMON */
+body {
+  font-size: 16px;
+  /* font-weight: 400; */
+  color: #333;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  /* background-color: orange; */
+}
+a {
+  text-decoration: none;
+}
+
+/* MAIN */
+.main .inner {
+  height: 720px;
+}
+.main .inner .search {
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  right: calc((1200px - 500px) / 2);
+  top: calc((720px - 40px) / 2);
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 3px 50px 3px 15px;
+  box-sizing: border-box;
+  font-size: 25px;
+  transition: .3s;
+}
+
+.main .inner .search:focus {
+  border: 2px solid #2997d6;
+}
+.main .inner .searchIcon {
+  font-size: 40px;
+  font-weight: 700;
+  color: #29d66b;
+  position: absolute;
+  right: calc((1200px - 500px) / 2);
+  top: calc((720px - 40px) / 2);
+  padding: 4px 8px;
+}
+.main .inner .description {
+  /* background-color: red; */
+  width: 400px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  position: absolute;
+  top: calc((720px - 40px) / 2 + 80px);
+  left: calc((1200px - 400px) / 2)
+}
