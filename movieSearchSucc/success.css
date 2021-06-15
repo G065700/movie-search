@@ -1,0 +1,73 @@
+.result {
+  width: 1140px;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 30px 0;
+  /* background-color: red; */
+}
+.result span {
+  color: #ee9090;
+  font-weight: 700;
+}
+#movieList {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: flex-start; */
+  width: 690px;
+  /* height: 500px; */
+  margin: 0 auto;
+  /* padding: 50px 0 0 0;
+  box-sizing: border-box; */
+}
+#movieList > div {
+  /* background-color: orange; */
+  margin: 0 30px 30px 0;
+}
+#movieList > div:nth-child(4n) {
+  /* background-color: orange; */
+  margin: 0 0 30px;
+}
+
+.moviePoster {
+  width: 150px;
+  /* height: 178px; */
+  border: 1px solid #7e7878;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.movieTitle {
+  font-weight: 700;
+}
+.movieTitle,
+.movieYear {
+  width: 135px;
+  height: 16px;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pagination {
+  width: 1140px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* background-color: orange; */
+}
+.pagination .index {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.pagination .index:last-child {
+  margin-right: 0;
+}
+.pagination .index:hover {
+  cursor: pointer;
+  color: #ee9090;
+}

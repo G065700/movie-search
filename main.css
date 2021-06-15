@@ -26,25 +26,44 @@ a {
   right: calc((1200px - 500px) / 2);
   top: calc((720px - 40px) / 2);
   outline: none;
-  border: 2px solid #333;
+  border: 2px solid #e5e3dd;;
   border-radius: 15px;
-  padding: 3px 50px 3px 15px;
+  padding: 12px 50px 12px 15px;
   box-sizing: border-box;
-  font-size: 25px;
+  font-size: 20px;
   transition: .3s;
+  background-color: #f5f4f2;
+  transition: .7s;
 }
 
 .main .inner .search:focus {
-  border: 2px solid #2997d6;
+  border: 2px solid #004c81;;
+  background-color: #ffffff;
 }
 .main .inner .searchIcon {
-  font-size: 40px;
+  font-size: 37px;
   font-weight: 700;
-  color: #29d66b;
+  color: #94918d;
   position: absolute;
   right: calc((1200px - 500px) / 2);
   top: calc((720px - 40px) / 2);
-  padding: 4px 8px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+/* .main .inner .navy {
+  color: #004c81;
+} */
+.main .inner p {
+  visibility: hidden;
+  font-size: 14px;
+  font-weight: 900;
+  color: #FF0000;
+  position: absolute;
+  left: 360px;
+  top: 395px;
+}
+.main .inner .visible {
+  visibility: visible;
 }
 .main .inner .description {
   /* background-color: red; */
@@ -53,6 +72,6 @@ a {
   text-align: center;
   color: #333;
   position: absolute;
-  top: calc((720px - 40px) / 2 + 80px);
+  top: calc((720px - 40px) / 2 + 120px);
   left: calc((1200px - 400px) / 2)
 }
