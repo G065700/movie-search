@@ -33,7 +33,7 @@ html, css, JS
 <!-- axios -->
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 ```
-<a href="hhttps://www.omdbapi.com/" title="OMDb API">OMDb(The Open Movie Database) API 로 이동</a>
+<a href="https://www.omdbapi.com/" title="OMDb API">OMDb(The Open Movie Database) API 로 이동</a>
 
 ```javascript
 // OMDb로부터의 데이터 수신 여부에 따른 페이지 이동 처리
