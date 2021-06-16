@@ -2,7 +2,7 @@
 const searchTermEls = document.querySelectorAll('span.searchTerm')
 console.log(searchTermEls)
 
-// URI로부터 검색어 추출
+// URI로부터 전달된 검색어 추출
 const searchTermElsContent = decodeURI(window.location.href).split(/(?<==)/)[1]
 
 // URI로부터 추출된 검색어의 길이 계산

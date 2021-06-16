@@ -1,3 +1,4 @@
+/* COMMON */
 body {
   font-family: 'Nanum Gothic', sans-serif;
 }
@@ -6,6 +7,7 @@ body {
   width: 710px;
   margin: 0 auto;
 }
+/* RESULT TITLE */
 .inner .result {
   height: 80px;
   padding: 20px 0;
@@ -18,11 +20,11 @@ body {
   font-weight: 700;
   color: #004c81;
 }
+/* RESULT MOVIE LIST */
 .inner #movieList {
   display: flex;
   flex-wrap: wrap;
   height: 590px;
-  /* background-color: beige; */
 }
 .inner #movieList .movie {
   margin: 0 30px 30px 0;
@@ -70,6 +72,7 @@ body {
   overflow: hidden;
   margin-top: 5px;
 }
+/* PAGINATION */
 .inner .pagination {
   display: flex;
   justify-content: center;
