@@ -33,6 +33,7 @@ html, css, JS
 <!-- axios -->
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 ```
+<br/>
 <a href="https://www.omdbapi.com/" title="OMDb API">OMDb(The Open Movie Database) API 로 이동</a>
 
 ```javascript
