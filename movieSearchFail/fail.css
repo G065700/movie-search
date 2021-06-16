@@ -1,3 +1,4 @@
+/* COMMON */
 body {
   height: 100vh;
   display: flex;
@@ -5,32 +6,33 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .inner {
   width: 600px;
   height: 400px;
   color: #333;
   position: relative;
 }
-.searchRes {
+.inner .searchRes {
   height: 80px;
   font-size: 40px;
   font-weight: 700;
   text-align: center;
 }
-.searchTerm {
+.inner .searchRes .searchTerm {
   color: #fc0303;
   font-weight: 700;
 }
-.material-icons {
+.inner .material-icons {
   font-size: 150px;
   font-weight: 100;
   padding-bottom: 50px;
 }
-.description1 {
+.inner .description1 {
   width: inherit;
   font-size: 20px;
 }
-.description2 {
+.inner .description2 {
   width: inherit;
   font-size: 16px;
   line-height: 1.5;
