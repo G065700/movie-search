@@ -64,3 +64,7 @@ searchIconEl.addEventListener('click', () => {
 <!-- 동일한 사용자 경험을 위한 CSS 초기화 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
 ```
+<br/>
+
+## 기타 내용
+* OMDb API 사용 : 무료 회원은 검색 시 최대 10개의 영화 데이터를 제공받을 수 있음
