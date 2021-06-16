@@ -6,6 +6,7 @@ body {
 .inner {
   width: 710px;
   margin: 0 auto;
+  position: relative;
 }
 /* RESULT TITLE */
 .inner .result {
@@ -19,6 +20,30 @@ body {
 .inner .result p span {
   font-weight: 700;
   color: #004c81;
+}
+/* BUTTON */
+.btn {
+  width: 160px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  transition: .4s;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
 }
 /* RESULT MOVIE LIST */
 .inner #movieList {
