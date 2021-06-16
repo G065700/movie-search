@@ -30,11 +30,13 @@ html, css, JS 그리고 axios 모듈을 사용하여 OMDb API로 부터 제공�
 html, css, JS
 ```
 <br/>
+
 ```html
 <!-- axios -->
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 ```
 <br/>
+
 <a href="https://www.omdbapi.com/" title="OMDb API">OMDb(The Open Movie Database) API 로 이동</a>
 
 ```javascript
@@ -57,6 +59,7 @@ searchIconEl.addEventListener('click', () => {
 })
 ```
 <br/>
+
 ```html
 <!-- 동일한 사용자 경험을 위한 CSS 초기화 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
