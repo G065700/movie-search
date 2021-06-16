@@ -1,73 +1,99 @@
-.result {
-  width: 1140px;
-  margin: 0 auto;
-  font-size: 30px;
-  padding: 30px 0;
-  /* background-color: red; */
-}
-.result span {
-  color: #ee9090;
-  font-weight: 700;
-}
-#movieList {
-  background-color: beige;
-  display: flex;
-  flex-wrap: wrap;
-  /* align-content: flex-start; */
-  width: 690px;
-  /* height: 500px; */
-  margin: 0 auto;
-  /* padding: 50px 0 0 0;
-  box-sizing: border-box; */
-}
-#movieList > div {
-  /* background-color: orange; */
-  margin: 0 30px 30px 0;
-}
-#movieList > div:nth-child(4n) {
-  /* background-color: orange; */
-  margin: 0 0 30px;
+body {
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
-.moviePoster {
-  width: 150px;
-  /* height: 178px; */
+.inner {
+  width: 710px;
+  margin: 0 auto;
+}
+.inner .result {
+  height: 80px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.inner .result p {
+  font-size: 30px;
+} 
+.inner .result p span {
+  font-weight: 700;
+  color: #004c81;
+}
+.inner #movieList {
+  display: flex;
+  flex-wrap: wrap;
+  height: 590px;
+  /* background-color: beige; */
+}
+.inner #movieList .movie {
+  margin: 0 30px 30px 0;
+}
+.inner #movieList .movie:nth-child(4n) {
+  margin-right: 0;
+}
+.inner #movieList .movie .moviePoster {
+  width: 155px;
+  height: 220px;
   border: 1px solid #7e7878;
   box-sizing: border-box;
   border-radius: 10px;
+  overflow: hidden;
 }
-.movieTitle {
+.inner #movieList .movie .noMoviePoster {
+  width: 155px;
+  height: 220px;
+  border: 1px solid #7e7878;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #b1a9a9;
+  overflow: hidden;
+  position: relative;
+}
+.inner #movieList .movie .noMoviePoster p {
+  text-align: center;
+  line-height: 1.3;
+  width: 155px;
+  height: 60px;
+  position: absolute;
+  top: calc((220px - 60px) /2);
+}
+.inner #movieList .movie .movieTitle {
   font-weight: 700;
 }
-.movieTitle,
-.movieYear {
-  width: 135px;
+.inner #movieList .movie .movieTitle,
+.inner #movieList .movie .movieYear {
+  width: 155px;
   height: 16px;
   font-size: 13px;
   text-align: center;
-  margin-top: 5px;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  margin-top: 5px;
 }
-.pagination {
-  width: 1140px;
-  height: 40px;
-  margin: 0 auto;
+.inner .pagination {
   display: flex;
   justify-content: center;
-  /* background-color: orange; */
 }
-.pagination .index {
-  width: 20px;
-  height: 20px;
+.inner .pagination a {
+  width: 32px;
+  height: 32px;
   font-size: 20px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
   margin-right: 10px;
+  padding: 5px;
+  border: 2px solid #7e7878;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: .3s;
 }
-.pagination .index:last-child {
+.inner .pagination a:last-child {
   margin-right: 0;
 }
-.pagination .index:hover {
+.inner .pagination a:hover {
   cursor: pointer;
-  color: #ee9090;
+  color: #004c81;
+  border: 2px solid #004c81;
+  transform: scale(1.1);
 }

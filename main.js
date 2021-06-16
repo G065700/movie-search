@@ -2,25 +2,19 @@ const searchEl = document.querySelector('.main .search')
 const searchIconEl = document.querySelector('.main .searchIcon')
 const pEl = document.querySelector('p')
 
-// searchEl.addEventListener('focus', () => {
-//   if(searchEl.value.trim().length !== 0) {
-//     searchIconEl.classList.add('navy')
-//     pEl.classList.remove('visible')
-//   } else {
-//     searchIconEl.classList.remove('navy')
-//   }
-// })
-
 setInterval(() => {
   if (searchEl.value.trim().length !== 0) {
     pEl.classList.remove('visible')
-    // searchIconEl.classList.add('navy')
+    searchIconEl.classList.add('navy')
+  }
+  else {
+    searchIconEl.classList.remove('navy')
   }
 }, 100)
 
 searchIconEl.addEventListener('click', () => {
   if (searchEl.value.trim().length === 0) {
-    document.querySelector('p').classList.add('visible')
+    pEl.classList.add('visible')
   } else {
     axios
       .get(`https://www.omdbapi.com/?apikey=f1b5abfc&s=${searchEl.value}`)
@@ -37,7 +31,6 @@ searchIconEl.addEventListener('click', () => {
 
 searchEl.addEventListener('keyup', e => {
   if (e.keyCode === 13) {
-    // alert('123')
     if (searchEl.value.trim().length === 0) {
       document.querySelector('p').classList.add('visible')
     } else {
@@ -54,8 +47,3 @@ searchEl.addEventListener('keyup', e => {
     }
   }
 })
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   alert(searchEl.value)
-//   searchEl.value = ""
-// })

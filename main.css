@@ -9,7 +9,6 @@ body {
   height: 100vh;
   margin: 0 auto;
   position: relative;
-  /* background-color: orange; */
 }
 .main .inner .search {
   width: 500px;
@@ -43,6 +42,9 @@ body {
   right: calc((1200px - 500px) / 2);
   top: calc((100vh - 50px) / 2);
   cursor: pointer;
+}
+.main .inner .navy {
+  color: #004c81;
 }
 .main .inner p {
   visibility: hidden;
